@@ -26,11 +26,11 @@ export default ({show_intro, show_menu, market, account, web3_wallet, _})=>
       <nav class="nav nav-masthead justify-content-center">
         { if account.isSignedIn
             <div class="nav-item dropdown #{'show' if show_menu}">
-              <a class="nav-link dropdown-toggle text-left" href="##"
+              <a class="nav-link dropdown-toggle text-right" href="##"
                  onclick={(e)=> e.preventDefault(); _ show_menu: !show_menu}>
                 <span class="ethereal">{ account.name }</span>
                 <br/>
-                <small class="tabular d-none d-sm-inline">
+                <small class="tabular d-inline-block text-truncate" style={maxWidth: '80vw'}>
                  {if web3_wallet.get_address()
                    web3_wallet.get_address()}
                  {unless web3_wallet.get_address()

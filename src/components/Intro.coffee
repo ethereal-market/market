@@ -105,7 +105,7 @@ export default ({show_intro, _})=>
         <li>Make sure you have installed Metamask browser extension or using any
           other Web3 compatible wallet.</li>
 
-        <li>If you are on the phone you can use Cipher Browser, Coinbase wallet, Opera Touch or other</li>
+        <li>If you are on the phone you can use Cipher Browser, Coinbase wallet or other</li>
 
         <li>You are able to buy and sell Wrapped Ether (WETH) for Wrapped Bitcoin (WBTC)</li>
 

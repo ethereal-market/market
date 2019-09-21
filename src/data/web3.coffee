@@ -53,7 +53,7 @@ check_network = (net_id)=>
 
 export default web3_wallet =
   get_address: if window.ethereum
-    => ethereum.selectedAddress or ''
+    => ethereum.selectedAddress or ethereum.address or ''
   else if web3_instance
     => web3_instance.eth?.defaultAccount
   else
