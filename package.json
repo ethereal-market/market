@@ -1,0 +1,52 @@
+{
+  "name": "liquidex",
+  "version": "1.0.0",
+  "description": "Decentralized Token Exchange",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack && rollup -c -w",
+    "test": "truffle test",
+    "build": "webpack && rollup -c rollup.prod.js",
+    "deploy:ipfs": "npm run build && ipd -O",
+    "deploy:contracts:dev": "truffle deploy --reset",
+    "deploy:contracts:ropsten": "truffle deploy --reset --network ropsten",
+    "deploy:contracts:kovan": "truffle deploy --reset --network kovan",
+    "deploy:contracts:main": "truffle deploy --reset --network main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockstack/hello-blockstack.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockstack/hello-blockstack/issues"
+  },
+  "homepage": "https://github.com/blockstack/hello-blockstack#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.3.0",
+    "@playframe/playframe": "^1.0.5",
+    "blockstack": "^19.3.0",
+    "web3-eth-contract": "^1.2.1",
+    "web3-providers-ws": "^1.2.1"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.4.1",
+    "ipfs-deploy": "^7.10.5",
+    "rollup": "^1.20.3",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-coffee-script": "^2.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-livereload": "^1.0.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-terser": "^5.1.1",
+    "truffle": "^5.0.35",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}
