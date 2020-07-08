@@ -16,10 +16,6 @@ export default ({show_intro, _})=>
       <h3 class="display-4">
         priced p2p token swaps
       </h3>
-      <h6>
-        More ERC20 tokens are coming on
-        October <span class="tabular">1</span>st, <span class="tabular">2019</span>
-      </h6>
     </div>
     <div class="row">
       <div class="col-lg">
