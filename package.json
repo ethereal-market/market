@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/blockstack/hello-blockstack#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^2.3.0",
+    "@openzeppelin/contracts": "^4.7.2",
     "@playframe/playframe": "^1.0.5",
     "blockstack": "^19.3.0",
     "web3-eth-contract": "^1.2.1",
